@@ -1,0 +1,9 @@
+.c-btn {
+    color: #4285f4;
+    background: #e2edff;
+    border: 2px solid #bad2fa;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: background .15s ease-out;
+  
+  }

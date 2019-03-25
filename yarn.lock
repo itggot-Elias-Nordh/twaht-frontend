@@ -1847,7 +1847,7 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
   integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
 
-body-parser@1.18.3:
+body-parser@1.18.3, body-parser@^1.18.3:
   version "1.18.3"
   resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.18.3.tgz#5b292198ffdd553b3a0f20ded0592b956955c8b4"
   integrity sha1-WykhmP/dVTs6DyDe0FkrlWlVyLQ=
@@ -5786,6 +5786,11 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lint@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/lint/-/lint-1.1.2.tgz#35ed064f322547c331358d899868664968ba371f"
+  integrity sha1-Ne0GTzIlR8MxNY2JmGhmSWi6Nx8=
+
 load-json-file@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-1.1.0.tgz#956905708d58b4bab4c2261b04f59f31c99374c0"
@@ -7906,7 +7911,7 @@ react-dev-utils@^8.0.0:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.4:
+react-dom@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.4.tgz#1061a8e01a2b3b0c8160037441c3bf00a0e3bc48"
   integrity sha512-Ob2wK7XG2tUDt7ps7LtLzGYYB6DXMCLj0G5fO6WeEICtT4/HdpOi7W/xLzZnR6RCG1tYza60nMdqtxzA8FaPJQ==
@@ -7980,7 +7985,7 @@ react-scripts@2.1.8:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.8.4:
+react@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.4.tgz#fdf7bd9ae53f03a9c4cd1a371432c206be1c4768"
   integrity sha512-0GQ6gFXfUH7aZcjGVymlPOASTuSjlQL4ZtVC5YKH+3JL6bBLCVO21DknzmaPlI90LN253ojj02nsapy+j7wIjg==
