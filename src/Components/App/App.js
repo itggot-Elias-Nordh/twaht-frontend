@@ -16,7 +16,7 @@ const App = () => {
   };
   return (
     <main className="content">
-        <Twhat method="PUT" id="1337" language="en" />
+        <Twhat method="GET" id="1" language="en" />
         <Modal {...modalProps}>{modalContent}</Modal>
     </main>
 
