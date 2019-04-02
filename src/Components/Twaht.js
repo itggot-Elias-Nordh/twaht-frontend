@@ -26,24 +26,25 @@ export class Twhat extends Component {
         const method = this.props.method;
         const url = "http://127.0.0.1:8080/v1/" + id + (language !== null && language !== "" ? "/" + language : "");
         const formData = new FormData();
-        formData.append('content', '!!');
-        let params = {
+        formData.append('content', '1');
+        formData.append('status', 'hidden');
+        let options = {
             mode: "cors",
             method: method,
             headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
+                'Access-Control-Allow-Origin': "*",
+                'Content-Disposition': 'form-data; name="content"',
                 'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvc2hvcC50ZXh0YWxrLnNlIiwiYXVkIjoiaHR0cDpcL1wvZXhhbXBsZS5jb20iLCJpYXQiOjEzNTY5OTk1MjQsIm5iZiI6MTM1NzAwMDAwMH0.rIw5eRrgAhOnxhVBlBThIB3kxxZQo6GHEGYVamDe8ys'
             },
         };
         if(method !== "GET") {
-            delete params.headers['Content-Type'];
-            params["body"] = formData;
+            // delete options.headers['Content-Type'];
+            options["body"] = formData;
         }
-        console.log(params)
         // const bodyParser = require('body-parser');
         // app.use(bodyParser.urlencoded({ extended: false }));
         // app.use(bodyParser.json());
-        fetch(url, params)
+        fetch(url, options)
         .then(res => res.json())
         .then(
             (result) => { 
